@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>739c9478-eb90-420f-8ad7-5ad428011415</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>CardAnalyzer.py</StartupFile>
+    <StartupFile>CardPatternizer.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,8 +22,17 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="CardAnalyzer.py" />
+    <Compile Include="Analyzer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardPatternizer.py" />
     <Compile Include="ExcelReader.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Record.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tester.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="TransactionDB.py">
